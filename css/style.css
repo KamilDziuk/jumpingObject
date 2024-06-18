@@ -7,7 +7,7 @@
 .gameBoard
 {  
   
-    background-color: rgba(34, 0, 255, 0.387);
+    background-color: rgba(34, 0, 255, 0.983);
     position: relative;
     top:400px;
     width: 500px;
@@ -18,15 +18,27 @@
     
 }
 
+.counter
+{   
+    top: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align:center;
+    position: relative;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: 4;
+}
+
 
 .jumpingObject
 {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
   
     position: relative;
-    top: 490px;
-    width: 20px;
-    height: 20px;
+    top:472px;
+    width: 60px;
+    height: 60px;
     left:490px;
     transform:translate(-50%,-50%);
    
@@ -36,12 +48,12 @@
 
 .blockMoving
 {
-    background-color: rgb(201, 14, 14);
+    background-color: rgb(219, 13, 47);
   
     position: relative;
-top: 468px;
-    width: 25px;
-    height: 25px;
+top: 405px;
+    width: 60px;
+    height: 60px;
     left:50%;
     transform:translate(-50%,-50%);
     z-index: 2;
