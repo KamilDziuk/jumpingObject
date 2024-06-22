@@ -12,11 +12,15 @@ blockMoving.style.top = "405px"
 let point = 0;
 pointCounter = () =>
     {
-        if(point <= 12000){
+        
         counter.innerHTML = `Points:${point}`;
-        setInterval(pointCounter,1700)
-        point ++;
+        setInterval(pointCounter,2000)
+      if(point == 7000)
+        {
+        point = 0; 
         }
+        
+        point ++;
     }
 
     pointCounter();
@@ -63,7 +67,7 @@ setInterval(() =>
         {
             pointCounter();
       alert(`Game over, Points:${point}`)
-         
+ 
         }
 
         if(blockMoving.style.left == "500px")
@@ -78,4 +82,4 @@ setInterval(() =>
             }
   
               
-},1000)
+},10)
