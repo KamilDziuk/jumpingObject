@@ -7,9 +7,10 @@
 .gameBoard
 {  
   
-    background-color: rgba(34, 0, 255, 0.983);
+    background: url(/images/image5.jpg) center; 
     position: relative;
- 
+    background-size: cover;
+    background-attachment: fixed;
     left: 50%;
     margin-top: 40% !important;
     transform: translateX(-50%);
@@ -19,6 +20,8 @@
     margin-bottom: 10%;
     
 }
+
+
 
 .counter
 {   
@@ -34,6 +37,7 @@
 
 .jumpingObject
 {
+   
     background-color: rgb(0, 0, 0);
     position:fixed;
     width: 10%;

@@ -14,10 +14,10 @@ pointCounter = () =>
     {
         
         counter.innerHTML = `Points:${point}`;
-        setInterval(pointCounter,1000)
-      if(point == 7000)
+        setInterval(pointCounter,5000)
+      if(point >= 15000)
         {
-        point = 0; 
+        point = 0 ; 
         }
         
         point ++;
@@ -65,7 +65,7 @@ setInterval(() =>
 
     if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
-            pointCounter();
+            
       alert(`Game over, Points:${point}`);
  
         }
@@ -78,3 +78,5 @@ setInterval(() =>
        
               
 },30)
+
+
