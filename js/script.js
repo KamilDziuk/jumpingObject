@@ -5,16 +5,16 @@
 let counter = document.querySelector(".counter");
 let jumpingObject = document.querySelector(".jumpingObject");
 let blockMoving = document.querySelector(".blockMoving");
-jumpingObject.style.left = "480px"
-jumpingObject.style.top = "472px"
-blockMoving.style.left = "10px"
-blockMoving.style.top = "405px"
+jumpingObject.style.left = "90%"
+jumpingObject.style.top = "91.5%"
+blockMoving.style.left = "0%"
+blockMoving.style.top = "91.5%"
 let point = 0;
 pointCounter = () =>
     {
         
         counter.innerHTML = `Points:${point}`;
-        setInterval(pointCounter,2000)
+        setInterval(pointCounter,1000)
       if(point == 7000)
         {
         point = 0; 
@@ -27,11 +27,11 @@ pointCounter = () =>
 jumpingObject.addEventListener("click", (event) =>{
 
     
-    jumpingObject.style.top =  "400px"
+    jumpingObject.style.top =  "70%"
     setTimeout( () =>
     {
      
-    jumpingObject.style.top =  "472px"
+    jumpingObject.style.top =  "91.5%"
     },300)
 
 });
@@ -44,11 +44,11 @@ document.addEventListener("keydown", (event) =>{
       if(event.code == "KeyW")
           {
       
-   jumpingObject.style.top =  "400px"
+   jumpingObject.style.top =  "70%"
       setTimeout( () =>
       {
        
-      jumpingObject.style.top =  "472px"
+      jumpingObject.style.top =  "91.5%"
       },300)
        
           }
@@ -61,25 +61,20 @@ document.addEventListener("keydown", (event) =>{
 setInterval(() => 
 {
     let currentLeft2 = parseInt(blockMoving.style.left);
-    blockMoving.style.left = `${currentLeft2 + 5}px`
+    blockMoving.style.left = `${currentLeft2 + 2}%`
 
-    if(blockMoving.style.left == "490px"  && jumpingObject.style.top == "472px" )
+    if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
             pointCounter();
-      alert(`Game over, Points:${point}`)
+      alert(`Game over, Points:${point}`);
  
         }
 
-        if(blockMoving.style.left == "500px")
+        if(blockMoving.style.left == "90%")
           {
             
-              blockMoving.style.left = "10px"
+              blockMoving.style.left = "0%"
           }
-        if(blockMoving.style.left == "-10px")
-            {
-             
-                blockMoving.style.left = "490px"
-            }
-  
+       
               
-},10)
+},30)
