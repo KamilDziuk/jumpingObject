@@ -4,11 +4,24 @@
 
 let counter = document.querySelector(".counter");
 let jumpingObject = document.querySelector(".jumpingObject");
+let gameBoard = document.querySelector(".gameBoard");
 let blockMoving = document.querySelector(".blockMoving");
-jumpingObject.style.left = "90%"
-jumpingObject.style.top = "91.5%"
-blockMoving.style.left = "0%"
-blockMoving.style.top = "91.5%"
+
+
+let allImages = ['/images/image0.jpg', '/images/image1.webp', '/images/image3.jpg',  '/images/image4.webp', '/images/image5.jpg']
+
+setInterval(() => {
+
+
+    let randomImages = allImages[Math.floor(Math.random()  * allImages.length)]
+    gameBoard.style.background = `url(${randomImages}) no-repeat center`;
+},3000)
+        
+
+jumpingObject.style.left = "90%";
+jumpingObject.style.top = "91.5%";
+blockMoving.style.left = "0%";
+blockMoving.style.top = "91.5%;"
 let point = 0;
 pointCounter = () =>
     {
@@ -66,7 +79,7 @@ setInterval(() =>
     if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
             
-      alert(`Game over, Points:${point}`);
+    //   alert(`Game over, Points:${point}`);
  
         }
 
