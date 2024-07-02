@@ -15,13 +15,13 @@ setInterval(() => {
 
     let randomImages = allImages[Math.floor(Math.random()  * allImages.length)]
     gameBoard.style.background = `url(${randomImages}) no-repeat center`;
-},3000)
+},3000);
         
 
 jumpingObject.style.left = "90%";
 jumpingObject.style.top = "91.5%";
 blockMoving.style.left = "0%";
-blockMoving.style.top = "91.5%;"
+blockMoving.style.top = "91.5%";
 let point = 0;
 pointCounter = () =>
     {
@@ -34,18 +34,18 @@ pointCounter = () =>
         }
         
         point ++;
-    }
+    };
 
     pointCounter();
-jumpingObject.addEventListener("click", (event) =>{
+jumpingObject.addEventListener("click", () =>{
 
     
-    jumpingObject.style.top =  "70%"
+    jumpingObject.style.top =  "70%";
     setTimeout( () =>
     {
      
-    jumpingObject.style.top =  "91.5%"
-    },300)
+    jumpingObject.style.top =  "91.5%";
+    },300);
 
 });
 document.addEventListener("keydown", (event) =>{
@@ -57,12 +57,12 @@ document.addEventListener("keydown", (event) =>{
       if(event.code == "KeyW")
           {
       
-   jumpingObject.style.top =  "70%"
+   jumpingObject.style.top =  "70%";
       setTimeout( () =>
       {
        
-      jumpingObject.style.top =  "91.5%"
-      },300)
+      jumpingObject.style.top =  "91.5%";
+      },300);
        
           }
                 
@@ -79,17 +79,17 @@ setInterval(() =>
     if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
             
-    //   alert(`Game over, Points:${point}`);
+      alert(`Game over, Points:${point}`);
  
         }
 
         if(blockMoving.style.left == "90%")
           {
             
-              blockMoving.style.left = "0%"
+              blockMoving.style.left = "0%";
           }
        
               
-},30)
+},30);
 
 
