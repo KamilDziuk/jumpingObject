@@ -12,12 +12,12 @@
     background-size: cover;
     background-attachment: fixed;
     left: 50%;
-    margin-top: 40% !important;
+    margin-top: 20% !important;
     transform: translateX(-50%);
-    width: 40%;
-    height: 300px;
+    width: 43%;
+    height:300px;
     text-align: center;
-    margin-bottom: 10%;
+
     
 }
 
@@ -40,7 +40,7 @@
    
     background-color: rgb(0, 0, 0);
     position:fixed;
-    width: 10%;
+    width: 3%;
     height: 25px;
 
     z-index: 2;
@@ -51,7 +51,7 @@
 {
     background-color: rgb(219, 13, 47);
     position: fixed;
-    width: 10%;
+    width: 3%;
     height: 25px;
     top: 91.5% !important;
  
