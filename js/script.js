@@ -22,21 +22,20 @@ jumpingObject.style.left = "90%";
 jumpingObject.style.top = "91.5%";
 blockMoving.style.left = "0%";
 blockMoving.style.top = "91.5%";
-let point = 6;
+let point = 0;
 pointCounter = () =>
     {
         
-        counter.innerHTML = `Points:${point}`;
-        setInterval(pointCounter,5000)
-      if(point >= 15000)
-        {
-        point = 0; 
-        }
+       
+      let pointResults =  setInterval(() => {
+            counter.innerHTML = `Points:${point}`;
         
         point ++;
+      
+    },1000)
     };
+    pointCounter()
 
-    pointCounter();
 jumpingObject.addEventListener("click", () =>{
 
     
@@ -78,9 +77,8 @@ setInterval(() =>
 
     if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
-            pointCounter()
-      alert(`Game over, Points:${point}`);
-      point =  -10; 
+           alert(`Game over, Your points:${point}`)
+            point = 0;
         }
 
         if(blockMoving.style.left == "90%")
