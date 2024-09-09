@@ -15,7 +15,7 @@ setInterval(() => {
 
     let randomImages = allImages[Math.floor(Math.random()  * allImages.length)]
     gameBoard.style.background = `url(${randomImages}) no-repeat center`;
-},3000);
+},4000);
         
 
 jumpingObject.style.left = "90%";
@@ -27,7 +27,7 @@ pointCounter = () =>
     {
         
        
-      let pointResults =  setInterval(() => {
+ setInterval(() => {
             counter.innerHTML = `Points:${point}`;
         
         point ++;
@@ -77,11 +77,11 @@ setInterval(() =>
 
     if(blockMoving.style.left =="90%"  && jumpingObject.style.top =="91.5%" )
         {
-           alert(`Game over, Your points:${point}`)
+           alert(`Game over.Your points: ${point}`)
             point = 0;
         }
 
-        if(blockMoving.style.left == "90%")
+        if(blockMoving.style.left == "98%")
           {
             
               blockMoving.style.left = "0%";
