@@ -72,6 +72,10 @@ pointCounter = () =>
                                                 {
                                                     level.innerHTML = "Level 9"
                                                 }
+                                                if(point == 100) 
+                                                    {
+                                                        level.innerHTML = "Level 10"
+                                                    }
                     }
                     levelGame();
         point ++;
