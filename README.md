@@ -14,6 +14,6 @@ The game was created using:
 - **CSS** – styling and animations  
 
 ## Play the Game  
-[Play Jumping Object](INSERT_GAME_LINK_HERE)  
+[Play Jumping Object](https://jumping-object.vercel.app/)  
 
  
