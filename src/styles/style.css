@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.gameBoard {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.thirdBackground {
+  background: url("/assets/images/image_1.webp") repeat-x;
+  height: 100%;
+  background-position: 0% 50%;
+  width: 58882076px;
+  animation: movingBackground 40s linear infinite;
+  position: absolute;
+  z-index: 5;
+}
+
+.secondBackground {
+  background: url("/assets/images/image_2.webp") repeat-x;
+  height: 100%;
+  background-position: 0% 140%;
+  width: 583336px;
+  animation: movingBackground 10s linear infinite;
+  position: absolute;
+  z-index: 4;
+}
+
+@keyframes movingBackground {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1000px, 0, 0);
+  }
+}
+
+.gameStartButton {
+  position: absolute;
+  top: 50%;
+  z-index: 9999;
+  color: #000;
+  font-size: 50px;
+  left: 50%;
+  padding: 1%;
+  border-radius: 5%;
+  background-color: #ffffff37;
+  backdrop-filter: blur(5px);
+  transform: translateX(-50%);
+  border: none;
+}
+
+.theMainCharacter {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  transition: 0.2s;
+}
+
+.swordButton {
+  left: 20px;
+  top: 80px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 5%;
+  background-color: #ffffff37;
+  backdrop-filter: blur(5px);
+  padding: 0.2%;
+}
+.swordButton:hover {
+  border-radius: 5%;
+  background-color: #ebe4af76;
+  padding: 0.1%;
+  transition: 0.2s;
+}

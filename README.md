@@ -1,19 +1,65 @@
-# Jumping Object  
-![presentation](images/presentation.gif)
-Jumping Object is a simple browser game where the player controls an object that jumps over obstacles using the **"W"** key. The game features a dynamic level system and a randomly changing background, adding variety to the gameplay.  
 
-## Game Rules  
-- Control the object using the **"W"** key to make it jump.  
-- The game level increases every **10 points**.  
-- If the **black object** touches the **red object**, the game ends, and both the score and level are reset.  
- 
+# JumpingObject Game
 
-## Technologies  
-The game was created using:  
-- **JavaScript** – game logic  
-- **CSS** – styling and animations  
+![presentation](assets/images/presentation.gif)
 
-## Play the Game  
-[Play Jumping Object](https://jumping-object.vercel.app/)  
+## Overview
 
- 
+"JumpingObject" is a simple, fun, and engaging browser game developed using JavaScript for the logic, CSS for the styling, and HTML for the structure. In this game, players control a character that must avoid or defeat various creatures. Players can jump over or attack the creatures to gain points and progress through different levels. The game features a dynamic points counter and level progression system.
+
+## Features
+
+* **Character Control:**
+
+  * **Jump**: Press the **W** key to make the character jump over enemies.
+  * **Attack**: Press the **D** key to attack and defeat the enemies.
+
+* **Mobile Support**: For mobile devices, the control system is adapted:
+
+  * **Jump**: Tap on the main character to make them jump.
+  * **Attack**: Tap the sword icon located in the top left corner to attack.
+
+* **Points and Levels**: The game keeps track of the player's score and level progression. Each level becomes more challenging with faster or more frequent enemies.
+
+## Installation
+
+To play the game locally, follow these steps:
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/KamilDziuk/JumpingObject.git
+   ```
+
+2. **Navigate to the Project Folder**:
+
+   ```bash
+   cd JumpingObject
+   ```
+
+3. **Open the `index.html` File in Your Browser**:
+   Simply open the `index.html` file in any modern browser to start playing.
+
+## Game Controls
+
+* **PC Controls**:
+
+  * Press **W** to jump.
+  * Press **D** to attack.
+* **Mobile Controls**:
+
+  * Tap on the character to make it jump.
+  * Tap the sword icon at the top left to attack.
+
+## Technologies Used
+
+* **JavaScript**: For the game logic and interactivity.
+* **CSS**: For styling the game and creating a visually appealing interface.
+* **HTML**: For structuring the page and game elements.
+
+## Contributions
+
+Feel free to contribute to the project by submitting a pull request or opening an issue. Any improvements or suggestions are welcome!
+
+## Play the Game
+[Play Jumping Object](https://jumping-object.vercel.app/)
