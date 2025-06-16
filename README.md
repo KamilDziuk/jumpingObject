@@ -1,11 +1,11 @@
 
-# JumpingObject Game
+# jumpingObject Game
 
 ![presentation](assets/images/presentation.gif)
 
 ## Overview
 
-"JumpingObject" is a simple, fun, and engaging browser game developed using JavaScript for the logic, CSS for the styling, and HTML for the structure. In this game, players control a character that must avoid or defeat various creatures. Players can jump over or attack the creatures to gain points and progress through different levels. The game features a dynamic points counter and level progression system.
+"jumpingObject" is a simple, fun, and engaging browser game developed using JavaScript for the logic, CSS for the styling, and HTML for the structure. In this game, players control a character that must avoid or defeat various creatures. Players can jump over or attack the creatures to gain points and progress through different levels. The game features a dynamic points counter and level progression system.
 
 ## Features
 
@@ -28,13 +28,13 @@ To play the game locally, follow these steps:
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/KamilDziuk/JumpingObject.git
+   git clone https://github.com/KamilDziuk/jumpingObject.git
    ```
 
 2. **Navigate to the Project Folder**:
 
    ```bash
-   cd JumpingObject
+   cd jumpingObject
    ```
 
 3. **Open the `index.html` File in Your Browser**:
