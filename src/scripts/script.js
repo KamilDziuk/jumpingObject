@@ -140,7 +140,7 @@ gameStartButton.addEventListener("click", () => {
   // Jump effect when clicking on the main character
   theMainCharacter.addEventListener("click", () => {
     theMainCharacter.style.bottom = "100px";
-
+    sounds.jumpSound.play();
     // Player jump effect
     jumpEffect();
   });
