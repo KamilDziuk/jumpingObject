@@ -24,6 +24,7 @@ export const levelCounter = (levelElement, level = 0) => {
   levelInterval = setInterval(() => {
     levelElement.innerHTML = `Level: ${level++}`;
   }, 5000);
+   return levelElement;
 };
 
 export const stopPointsCounter = () => {
