@@ -11,6 +11,7 @@ export const pointsCounter = (pointElement, point = 0) => {
   pointInterval = setInterval(() => {
     pointElement.innerHTML = `Point: ${point++}`;
   }, 1000);
+  return pointElement;
 };
 
 export const levelCounter = (levelElement, level = 0) => {
