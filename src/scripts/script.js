@@ -16,7 +16,7 @@ const gameStartButton = document.querySelector(".gameStartButton");
 gameStartButton.addEventListener("click", () => {
   // Counter points and level
   const levelElement = levelCounter();
-  pointsCounter();
+  const pointElement = pointsCounter();
 
   // Game sounds
   let sounds = gameSounds();
