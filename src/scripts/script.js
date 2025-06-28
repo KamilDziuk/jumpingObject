@@ -74,10 +74,10 @@ gameStartButton.addEventListener("click", () => {
           sounds.monsterKillSound.play();
           badCharacter.remove();
         }, 1000);
-      }
-      else {
-
-        
+      } else {
+        setTimeout(() => {
+        sounds.monsterKillSound.pause();
+        }, 1000);
       }
     };
 
