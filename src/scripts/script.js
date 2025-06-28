@@ -75,6 +75,10 @@ gameStartButton.addEventListener("click", () => {
           badCharacter.remove();
         }, 1000);
       }
+      else {
+
+        
+      }
     };
 
     setInterval(badStationMovement, 30);
