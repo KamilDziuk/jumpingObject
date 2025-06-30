@@ -69,7 +69,9 @@ gameStartButton.addEventListener("click", () => {
         badCharacter.style.transition = `7s`;
         badCharacter.style.bottom = `5%`;
         badCharacter.src = `/assets/images/smokeAfterTheMonster.gif`;
-
+        
+        setTimeout(() => {
+        }, 800);
         setTimeout(() => {
           sounds.monsterKillSound.play();
           badCharacter.remove();
