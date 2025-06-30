@@ -68,6 +68,7 @@ gameStartButton.addEventListener("click", () => {
         badCharacter.style.right = `-250%`;
         badCharacter.style.transition = `7s`;
         badCharacter.style.bottom = `5%`;
+        badCharacter.style.rotate = `222deg`;
         setTimeout(() => {
              badCharacter.src = `/assets/images/smokeAfterTheMonster.gif`;
         }, 800);
