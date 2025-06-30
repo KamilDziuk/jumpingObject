@@ -70,7 +70,9 @@ gameStartButton.addEventListener("click", () => {
         badCharacter.style.bottom = `5%`;
         badCharacter.style.rotate = `222deg`;
         setTimeout(() => {
-             badCharacter.src = `/assets/images/smokeAfterTheMonster.gif`;
+          badCharacter.src = `/assets/images/smokeAfterTheMonster.gif`;
+          badCharacter.style.transition = `1.5s`;
+          badCharacter.style.rotate = `360deg`;
         }, 800);
         setTimeout(() => {
           sounds.monsterKillSound.play();
