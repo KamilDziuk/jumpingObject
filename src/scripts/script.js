@@ -13,7 +13,7 @@ import {
 // Start game button
 const gameStartButton = document.querySelector(".gameStartButton");
 
-gameStartButton.addEventListener("click", () => {
+gameStartButton.addEventListener("click", async () => {
 
  const { gameSounds } = await import("./sounds.js");
   
