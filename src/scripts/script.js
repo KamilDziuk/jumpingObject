@@ -4,8 +4,6 @@ import { randomMonsterSkins } from "./randomMonsterSkins.js";
 import { endOfTheGame } from "./gameOver.js";
 import { mobileAttackButton } from "./mobileAttackButton.js";
 import {
-  pointsCounter,
-  levelCounter,
   stopPointsCounter,
   stopLevelCounter,
 } from "./counter.js";
@@ -14,7 +12,7 @@ import {
 const gameStartButton = document.querySelector(".gameStartButton");
 
 gameStartButton.addEventListener("click", async () => {
-
+  const { pointsCounter, levelCounter } = await import("./counter.js");
  const { gameSounds } = await import("./sounds.js");
   
   // Counter points and level
