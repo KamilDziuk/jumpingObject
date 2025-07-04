@@ -1,6 +1,5 @@
 
 import { createdMainCharacter, jumpEffect } from "./theMainCharacter.js";
-import { randomMonsterSkins } from "./randomMonsterSkins.js";
 import { endOfTheGame } from "./gameOver.js";
 import { mobileAttackButton } from "./mobileAttackButton.js";
 import {
@@ -12,7 +11,8 @@ import {
 const gameStartButton = document.querySelector(".gameStartButton");
 
 gameStartButton.addEventListener("click", async () => {
-  const { pointsCounter, levelCounter } = await import("./counter.js");
+ const { pointsCounter, levelCounter } = await import("./counter.js");
+ const { randomMonsterSkins } = await import("./randomMonsterSkins.js");
  const { gameSounds } = await import("./sounds.js");
   
   // Counter points and level
