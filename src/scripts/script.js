@@ -90,6 +90,14 @@
           clickmobileAttackButton.addEventListener("click", () => {
             afterKillingPlayer();
           });
+
+      let clickMobileJumpButton = mobileJumpButton();
+      clickMobileJumpButton.addEventListener("click", () => {
+        theMainCharacter.style.bottom = "100px";
+        sounds.jumpSound.play();
+        jumpEffect();
+      });
+         
         }
         document.addEventListener("keyup", (event) => {
           // Sword attack by pressing the D button on the keyboard
