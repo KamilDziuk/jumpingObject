@@ -85,9 +85,9 @@
         setInterval(badStationMovement, 30);
         if (window.innerWidth <= 500) {
           // Showing a clickable sword icon on mobile devices (main character attack)
-          let clickmobileAttackButton = mobileAttackButton();
+          let clickMobileAttackButton = mobileAttackButton();
 
-          clickmobileAttackButton.addEventListener("click", () => {
+          clickMobileAttackButton.addEventListener("click", () => {
             afterKillingPlayer();
           });
 
