@@ -10,7 +10,13 @@ export const createdMainCharacter = () => {
 };
 
 export const jumpEffect = () => {
-  setTimeout(() => {
-    theMainCharacter.style.bottom = "-20px";
-  }, 300);
+  if (window.innerWidth > 500) {
+    setTimeout(() => {
+      theMainCharacter.style.bottom = "-20px";
+    }, 300);
+  } else if (window.innerWidth <= 500) {
+    setTimeout(() => {
+      theMainCharacter.style.bottom = "-20px";
+    }, 600);
+  }
 };
