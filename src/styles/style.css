@@ -70,20 +70,29 @@
   transition: 0.2s;
 }
 
-.swordButton {
-  left: 20px;
-  top: 80px;
+.swordButton,
+.jumpButton {
   position: absolute;
+  left: 20px;
   width: 60px;
   height: 60px;
   border-radius: 5%;
   background-color: #ffffff37;
   backdrop-filter: blur(5px);
   padding: 0.2%;
+  transition: background-color 0.2s, padding 0.2s;
 }
-.swordButton:hover {
-  border-radius: 5%;
+
+.swordButton {
+  top: 80px;
+}
+
+.jumpButton {
+  top: 150px;
+}
+
+.swordButton:hover,
+.jumpButton:hover {
   background-color: #ebe4af76;
   padding: 0.1%;
-  transition: 0.2s;
 }
