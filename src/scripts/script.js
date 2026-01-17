@@ -42,7 +42,7 @@
           moveCounter = parseInt(badCharacter.style.right);
 
           window.innerWidth <= 500
-            ? (badCharacter.style.right = `${moveCounter + 1}%`)
+            ? (badCharacter.style.right = `${moveCounter + 2}%`)
             : (badCharacter.style.right = `${moveCounter + 1}%`);
         };
 
