@@ -2,7 +2,7 @@
     import { endOfTheGame } from "./gameOver.js";
     import { mobileAttackButton } from "./mobileAttackButton.js";
     import { stopPointsCounter, stopLevelCounter } from "./counter.js";
-
+    import { mobileJumpButton } from "./mobileJumpButton.js";
     // Start game button
     const gameStartButton = document.querySelector(".gameStartButton");
 
